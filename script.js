@@ -7,7 +7,7 @@ document.getElementById('enquiryForm').addEventListener('submit', function (even
   const message = document.getElementById('message').value.trim();
 
   const text = [
-    'Hello SAGAH Wellness Products,',
+    'Hello SAHA Wellness Products,',
     '',
     'I would like to make an enquiry.',
     `Name: ${name}`,
