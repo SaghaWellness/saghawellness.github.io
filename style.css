@@ -359,3 +359,8 @@ textarea { resize: vertical; }
 .pants-sizes span{background:#fff;border:1px solid #e8dce2;border-radius:12px;padding:8px 12px;color:#5b6c6f}
 .pants-sizes b{color:#d81b68;margin-right:5px}
 @media(max-width:900px){.women-story{grid-template-columns:1fr;padding:22px}.women-story-photo,.women-story-photo img{min-height:320px}.women-story-photo img{object-position:center 45%}}
+
+/* Final Women Empowering Women office story banner */
+.women-story-banner{max-width:1500px;margin:36px auto;padding:0;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 20px 55px rgba(10,79,79,.12);border:1px solid #eadfe5}
+.women-story-banner img{display:block;width:100%;height:auto;object-fit:contain;object-position:center;background:#fff}
+@media(max-width:700px){.women-story-banner{margin:22px 12px;border-radius:18px}.women-story-banner img{width:100%;height:auto;object-fit:contain}}
