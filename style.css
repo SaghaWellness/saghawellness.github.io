@@ -1,17 +1,17 @@
 :root {
-  --teal-950: #063f43;
-  --teal-900: #084f53;
-  --teal-800: #0a6668;
-  --teal-700: #0d7778;
-  --teal-100: #dff2f1;
-  --pink-50: #fff8fa;
-  --pink-100: #f9e9ee;
-  --pink-200: #f3d6df;
-  --rose-500: #c9567a;
-  --ink: #173336;
-  --muted: #607375;
+  --teal-950: #03484b;
+  --teal-900: #075b5f;
+  --teal-800: #087176;
+  --teal-700: #108287;
+  --teal-100: #e6f5f4;
+  --pink-50: #fffafb;
+  --pink-100: #f8edf0;
+  --pink-200: #f0dde3;
+  --rose-500: #ba6b82;
+  --ink: #173c3e;
+  --muted: #63787a;
   --white: #ffffff;
-  --line: #d8e5e4;
+  --line: #d4e6e4;
   --shadow: 0 18px 50px rgba(6, 63, 67, 0.12);
 }
 
@@ -63,16 +63,16 @@ img { max-width: 100%; display: block; }
   gap: 56px;
   padding: 72px clamp(22px, 7vw, 110px);
   background:
-    radial-gradient(circle at 8% 18%, rgba(201,86,122,.16), transparent 25%),
-    radial-gradient(circle at 95% 8%, rgba(13,119,120,.13), transparent 24%),
-    linear-gradient(135deg, #fff 0%, #fff8fa 48%, #fbeef2 100%);
+    radial-gradient(circle at 8% 18%, rgba(186,107,130,.10), transparent 25%),
+    radial-gradient(circle at 95% 8%, rgba(16,130,135,.11), transparent 24%),
+    linear-gradient(135deg, #ffffff 0%, #f9fcfb 46%, #f7edef 100%);
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   opacity: .34;
-  background-image: radial-gradient(circle at 20px 20px, rgba(201,86,122,.16) 1.2px, transparent 1.3px);
+  background-image: radial-gradient(circle at 20px 20px, rgba(186,107,130,.10) 1.2px, transparent 1.3px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -80,7 +80,7 @@ img { max-width: 100%; display: block; }
 .hero-visual {
   position: relative;
   border-radius: 34px;
-  background: linear-gradient(145deg, #fff 0%, #fbeef2 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #f8f0f2 100%);
   border: 1px solid rgba(8,79,83,.14);
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -93,7 +93,7 @@ img { max-width: 100%; display: block; }
   place-items: center;
   padding: 16px;
   min-height: 0;
-  background: #fff9fb;
+  background: #fbfdfc;
 }
 .hero-product-art {
   width: 100%;
@@ -146,9 +146,9 @@ img { max-width: 100%; display: block; }
 
 .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .product-card { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: 0 12px 34px rgba(6,63,67,.08); }
-.featured-card { border-color: rgba(201,86,122,.26); }
-.product-image-wrap { min-height: 330px; display: grid; place-items: center; padding: 26px; background: linear-gradient(135deg, #fff9fb 0%, #f7e4ea 100%); border-bottom: 1px solid var(--line); }
-.hair-wrap { background: linear-gradient(135deg, #fff7fb 0%, #eef9f6 100%); }
+.featured-card { border-color: rgba(186,107,130,.22); }
+.product-image-wrap { min-height: 330px; display: grid; place-items: center; padding: 26px; background: linear-gradient(135deg, #fffdfd 0%, #f7ecef 100%); border-bottom: 1px solid var(--line); }
+.hair-wrap { background: linear-gradient(135deg, #fffdfd 0%, #eef8f6 100%); }
 .hair-dye-image { filter: saturate(1.28) contrast(1.05); }
 .product-image-wrap img { width: 100%; height: 330px; object-fit: contain; border-radius: 14px; }
 .product-content { padding: 30px; }
@@ -162,8 +162,8 @@ img { max-width: 100%; display: block; }
 .size-card span { font-size: 28px; font-weight: 950; }
 .size-card strong { font-size: 17px; }
 .size-xl { background: linear-gradient(135deg, var(--teal-800), var(--teal-950)); }
-.size-xxl { background: linear-gradient(135deg, #e93882, #b91f62); }
-.offer-banner { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 16px; padding: 15px 17px; border-radius: 16px; background: linear-gradient(135deg, #f03f89, #bd1f64); color: white; }
+.size-xxl { background: linear-gradient(135deg, #148187, #075b5f); }
+.offer-banner { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 16px; padding: 15px 17px; border-radius: 16px; background: linear-gradient(135deg, #0e7c81, #075b5f); color: white; }
 .offer-banner strong { font-size: 24px; letter-spacing: .01em; }
 .offer-banner span { font-weight: 850; }
 
@@ -241,7 +241,7 @@ textarea { resize: vertical; }
   overflow: hidden;
   border: 5px solid rgba(255,255,255,.95);
   box-shadow: 0 14px 32px rgba(8,79,83,.22);
-  background: #fbeef2;
+  background: #f6edef;
   z-index: 3;
 }
 .real-model-portrait img {
@@ -259,7 +259,7 @@ textarea { resize: vertical; }
   border-radius: 28px;
   border: 4px solid white;
   box-shadow: 0 10px 24px rgba(8,79,83,.22);
-  background: #f7e4ea;
+  background: #f5edef;
 }
 .hair-model-portrait img {
   width: 100%; height: 100%; object-fit: cover;
@@ -275,15 +275,15 @@ textarea { resize: vertical; }
 .hero-copy { padding: clamp(30px, 4vw, 58px); display:flex; flex-direction:column; justify-content:center; }
 .kicker { color: var(--teal-800); font-weight:800; letter-spacing:.12em; font-size:13px; margin:0 0 18px; }
 .hero h1 { margin:0; max-width:760px; color:var(--teal-950); font-size:clamp(42px,5vw,72px); line-height:1.06; letter-spacing:-.035em; }
-.hero h1 span { color:#d51b70; }
+.hero h1 span { color:#0a7276; }
 .hero-lead { max-width:760px; margin:24px 0 0; font-size:clamp(17px,1.45vw,21px); color:#40595b; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .btn { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:12px 22px; border-radius:999px; text-decoration:none; font-weight:800; transition:.2s ease; }
-.btn-primary { background:linear-gradient(135deg,#ec1472,#c20d5c); color:#fff; box-shadow:0 10px 24px rgba(213,27,112,.22); }
+.btn-primary { background:linear-gradient(135deg,#0f7d82,#075b5f); color:#fff; box-shadow:0 10px 24px rgba(7,91,95,.22); }
 .btn-outline { background:#fff; color:var(--teal-900); border:2px solid var(--teal-800); }
 .btn-whatsapp { background:#129c52; color:#fff; box-shadow:0 10px 24px rgba(18,156,82,.18); }
 .hero-points { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:30px; }
-.hero-points span { padding:13px 16px; border-radius:16px; background:linear-gradient(135deg,#fff,#fff1f6); border:1px solid #f1d4df; color:var(--teal-900); font-weight:750; box-shadow:0 7px 18px rgba(6,63,67,.06); }
+.hero-points span { padding:13px 16px; border-radius:16px; background:linear-gradient(135deg,#fff,#f2f9f8); border:1px solid #d8e9e7; color:var(--teal-900); font-weight:750; box-shadow:0 7px 18px rgba(6,63,67,.06); }
 @media (max-width:700px){.hero-copy{padding:28px 22px}.hero h1{font-size:40px}.hero-points{grid-template-columns:1fr}.hero-actions .btn{width:100%}}
 
 
@@ -339,28 +339,28 @@ textarea { resize: vertical; }
 }
 
 /* Women behind SAGHA story */
-.women-story{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:34px;align-items:center;background:linear-gradient(135deg,#fff8fb 0%,#fff 42%,#f2fbf6 100%);border:1px solid #eadfe5;border-radius:34px;padding:34px;margin-top:32px;box-shadow:0 20px 55px rgba(10,79,79,.08);overflow:hidden;position:relative}
-.women-story:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(223,30,112,.07);left:-130px;top:-130px}
-.women-story-photo{position:relative;border-radius:26px;overflow:hidden;min-height:440px;background:linear-gradient(135deg,#f8dce8,#e6f5e9);box-shadow:0 14px 36px rgba(0,0,0,.12)}
+.women-story{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:34px;align-items:center;background:linear-gradient(135deg,#fbfefd 0%,#fff 42%,#f4eeee 100%);border:1px solid #dce9e7;border-radius:34px;padding:34px;margin-top:32px;box-shadow:0 20px 55px rgba(10,79,79,.08);overflow:hidden;position:relative}
+.women-story:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(10,114,118,.07);left:-130px;top:-130px}
+.women-story-photo{position:relative;border-radius:26px;overflow:hidden;min-height:440px;background:linear-gradient(135deg,#f5edef,#e8f5f3);box-shadow:0 14px 36px rgba(0,0,0,.12)}
 .women-story-photo img{width:100%;height:100%;min-height:440px;display:block;object-fit:cover;object-position:center 48%}
 .women-story-copy{position:relative;z-index:1}
 .women-story-copy h2{font-size:clamp(2.1rem,4vw,3.7rem);line-height:1.02;color:#064f52;margin:8px 0 18px}
 .story-lead{font-size:1.12rem;line-height:1.75;color:#445b60}
 .story-values{display:grid;gap:12px;margin:24px 0}
-.story-values div{background:#fff;border:1px solid #e8dfe4;border-left:5px solid #df1e70;border-radius:16px;padding:14px 16px;box-shadow:0 7px 18px rgba(10,79,79,.05)}
+.story-values div{background:#fff;border:1px solid #e8dfe4;border-left:5px solid #0a7276;border-radius:16px;padding:14px 16px;box-shadow:0 7px 18px rgba(10,79,79,.05)}
 .story-values strong{display:block;color:#07575a;font-size:1.02rem;margin-bottom:3px}
 .story-values span{color:#65777a;font-size:.95rem}
 .story-note{display:inline-block;background:#07575a;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;letter-spacing:.02em}
-.period-pants-box{margin:18px 0;padding:18px;border-radius:18px;background:linear-gradient(135deg,#fff0f6,#f7fffb);border:1px solid #edd8e2}
+.period-pants-box{margin:18px 0;padding:18px;border-radius:18px;background:linear-gradient(135deg,#fbf4f6,#f5fbfa);border:1px solid #dce8e6}
 .period-pants-box h4{margin:4px 0 6px;color:#07575a;font-size:1.25rem}
 .period-pants-box p{margin:0;color:#5c6d70;line-height:1.55}
-.mini-kicker{font-size:.75rem;font-weight:900;color:#d81b68;letter-spacing:.08em}
+.mini-kicker{font-size:.75rem;font-weight:900;color:#0a7276;letter-spacing:.08em}
 .pants-sizes{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-.pants-sizes span{background:#fff;border:1px solid #e8dce2;border-radius:12px;padding:8px 12px;color:#5b6c6f}
-.pants-sizes b{color:#d81b68;margin-right:5px}
+.pants-sizes span{background:#fff;border:1px solid #dce7e5;border-radius:12px;padding:8px 12px;color:#5b6c6f}
+.pants-sizes b{color:#0a7276;margin-right:5px}
 @media(max-width:900px){.women-story{grid-template-columns:1fr;padding:22px}.women-story-photo,.women-story-photo img{min-height:320px}.women-story-photo img{object-position:center 45%}}
 
 /* Final Women Empowering Women office story banner */
-.women-story-banner{max-width:1500px;margin:36px auto;padding:0;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 20px 55px rgba(10,79,79,.12);border:1px solid #eadfe5}
+.women-story-banner{max-width:1500px;margin:36px auto;padding:0;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 20px 55px rgba(10,79,79,.12);border:1px solid #dce9e7}
 .women-story-banner img{display:block;width:100%;height:auto;object-fit:contain;object-position:center;background:#fff}
 @media(max-width:700px){.women-story-banner{margin:22px 12px;border-radius:18px}.women-story-banner img{width:100%;height:auto;object-fit:contain}}
