@@ -337,3 +337,25 @@ textarea { resize: vertical; }
   .product-image-wrap { min-height: 0; padding: 10px; }
   .product-image-wrap img { height: auto; max-height: 520px; }
 }
+
+/* Women behind SAGHA story */
+.women-story{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:34px;align-items:center;background:linear-gradient(135deg,#fff8fb 0%,#fff 42%,#f2fbf6 100%);border:1px solid #eadfe5;border-radius:34px;padding:34px;margin-top:32px;box-shadow:0 20px 55px rgba(10,79,79,.08);overflow:hidden;position:relative}
+.women-story:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(223,30,112,.07);left:-130px;top:-130px}
+.women-story-photo{position:relative;border-radius:26px;overflow:hidden;min-height:440px;background:linear-gradient(135deg,#f8dce8,#e6f5e9);box-shadow:0 14px 36px rgba(0,0,0,.12)}
+.women-story-photo img{width:100%;height:100%;min-height:440px;display:block;object-fit:cover;object-position:center 48%}
+.women-story-copy{position:relative;z-index:1}
+.women-story-copy h2{font-size:clamp(2.1rem,4vw,3.7rem);line-height:1.02;color:#064f52;margin:8px 0 18px}
+.story-lead{font-size:1.12rem;line-height:1.75;color:#445b60}
+.story-values{display:grid;gap:12px;margin:24px 0}
+.story-values div{background:#fff;border:1px solid #e8dfe4;border-left:5px solid #df1e70;border-radius:16px;padding:14px 16px;box-shadow:0 7px 18px rgba(10,79,79,.05)}
+.story-values strong{display:block;color:#07575a;font-size:1.02rem;margin-bottom:3px}
+.story-values span{color:#65777a;font-size:.95rem}
+.story-note{display:inline-block;background:#07575a;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;letter-spacing:.02em}
+.period-pants-box{margin:18px 0;padding:18px;border-radius:18px;background:linear-gradient(135deg,#fff0f6,#f7fffb);border:1px solid #edd8e2}
+.period-pants-box h4{margin:4px 0 6px;color:#07575a;font-size:1.25rem}
+.period-pants-box p{margin:0;color:#5c6d70;line-height:1.55}
+.mini-kicker{font-size:.75rem;font-weight:900;color:#d81b68;letter-spacing:.08em}
+.pants-sizes{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.pants-sizes span{background:#fff;border:1px solid #e8dce2;border-radius:12px;padding:8px 12px;color:#5b6c6f}
+.pants-sizes b{color:#d81b68;margin-right:5px}
+@media(max-width:900px){.women-story{grid-template-columns:1fr;padding:22px}.women-story-photo,.women-story-photo img{min-height:320px}.women-story-photo img{object-position:center 45%}}
