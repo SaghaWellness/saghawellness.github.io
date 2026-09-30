@@ -122,6 +122,62 @@
       </div>
     </section>
 
+    <section id="reviews" class="section reviews-section">
+      <div class="section-head review-head">
+        <p class="kicker">CUSTOMER FEEDBACK</p>
+        <h2>Share your experience with SAGHA.</h2>
+        <p>Your feedback helps us improve our products and service. Reviews are sent to SAGHA on WhatsApp for approval before they are published on the website.</p>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="review-showcase">
+          <div class="review-stars" aria-label="5 star review section">★★★★★</div>
+          <h3>Customer Reviews</h3>
+          <p>Approved customer experiences can be featured here. This keeps the website helpful, genuine and protected from spam.</p>
+          <div class="review-trust-row">
+            <span>✓ Product feedback</span>
+            <span>✓ 1–5 star rating</span>
+            <span>✓ Reviewed before publishing</span>
+          </div>
+        </div>
+
+        <form id="reviewForm" class="review-form">
+          <div class="field-row">
+            <label>
+              Your Name
+              <input id="reviewName" name="reviewName" type="text" placeholder="Enter your name" required>
+            </label>
+            <label>
+              Product
+              <select id="reviewProduct" name="reviewProduct" required>
+                <option value="">Select a product</option>
+                <option>Queen's Comfort Sanitary Pads</option>
+                <option>Queen's Comfort Period Pants - M / XL</option>
+                <option>Queen's Hair Dye</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Rating
+            <select id="reviewRating" name="reviewRating" required>
+              <option value="">Select rating</option>
+              <option value="5">★★★★★ - 5 Stars</option>
+              <option value="4">★★★★☆ - 4 Stars</option>
+              <option value="3">★★★☆☆ - 3 Stars</option>
+              <option value="2">★★☆☆☆ - 2 Stars</option>
+              <option value="1">★☆☆☆☆ - 1 Star</option>
+            </select>
+          </label>
+          <label>
+            Your Review
+            <textarea id="reviewComment" name="reviewComment" rows="4" placeholder="Tell us about your experience" required></textarea>
+          </label>
+          <button class="btn btn-primary btn-full" type="submit">Submit Review on WhatsApp</button>
+          <p class="form-note">Your review is not posted automatically. It is sent to SAGHA for approval first.</p>
+        </form>
+      </div>
+    </section>
+
     <section id="contact" class="section contact-section">
       <div class="section-head">
         <p class="kicker">CONTACT SAGHA</p>

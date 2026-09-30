@@ -35,3 +35,29 @@ document.querySelectorAll('.product-enquiry-link').forEach(function (link) {
     }, 400);
   });
 });
+
+const reviewForm = document.getElementById('reviewForm');
+if (reviewForm) {
+  reviewForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('reviewName').value.trim();
+    const product = document.getElementById('reviewProduct').value;
+    const rating = document.getElementById('reviewRating').value;
+    const comment = document.getElementById('reviewComment').value.trim();
+    const stars = '★'.repeat(Number(rating)) + '☆'.repeat(5 - Number(rating));
+
+    const text = [
+      'Hello SAGHA Wellness Products,',
+      '',
+      'I would like to submit a customer review for approval.',
+      `Name: ${name}`,
+      `Product: ${product}`,
+      `Rating: ${stars} (${rating}/5)`,
+      `Review: ${comment}`
+    ].join('\\n');
+
+    const url = `https://wa.me/919025427136?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+}
