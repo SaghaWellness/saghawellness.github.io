@@ -486,3 +486,14 @@ input:focus,select:focus,textarea:focus{border-color:#c99a3d;box-shadow:0 0 0 3p
   .reviews-layout { grid-template-columns: 1fr; }
   .review-showcase, .review-form { padding: 22px; }
 }
+
+/* OUR STORY readability fix - 2026-10-07 */
+.about-section .about-copy .kicker {
+  color: #E8C66A;
+}
+.about-section .about-copy h2 {
+  color: #FFF9EE;
+}
+.about-section .about-copy p {
+  color: rgba(255, 255, 255, 0.92);
+}
